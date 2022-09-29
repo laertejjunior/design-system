@@ -1,0 +1,97 @@
+/************* TEMA BACKEND - SISTEMAS SUBTI **************
+
+PREFEITURA MUNICIPAL DE VITORIA - PMV
+PROJETO: INTERFACE GRAFICA SUBTI
+AUTOR: DIRCEU FLAVIO MACEDO [Designer Subti]
+CONTATO: dfmacedo@vitoria.es.gov.br
+Tema Antigo: 2011/2014
+Tema Novo  : 27-01-2015
+Revisao(01):
+
+.seletor/classe {
+    [fonte e propriedades de texto]
+    [plano de fundo]
+    [tamanho]
+    [bordas]
+    [espacamentos]
+    [posicionamento]
+}
+/* IMPORTACOES
+//////////////////////////////////////////////////////*/
+
+@import url('https://assets.vitoria.es.gov.br/pmv/css/base.css');
+
+
+// the ~ allows you to reference things in node_modules
+
+@import "pmv/variables";
+@import "pmv/variaveisbootstrap";
+@import "pmv/accessibility";
+@import "pmv/header";
+
+//login
+@import "pmv/login";
+
+@import "pmv/outlinefocus";
+@import "pmv/typography";
+@import "pmv/opacity";
+
+//layouts
+@import "pmv/layouts";
+@import "pmv/layouts-colors";
+
+//components
+@import "pmv/components";
+
+//plugins
+@import "pmv/plugins";
+
+//responsive
+@import "pmv/responsive";
+
+//Background
+@import "pmv/background";
+@import "~bootstrap/scss/bootstrap";
+
+
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid $input-border-color;
+}
+
+.select2-container--default .select2-selection--single {
+  border: 1px solid $input-border-color;
+}
+
+
+.select2-container {
+  width: 100% !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 37px!important;
+}
+
+
+.btn {
+  border-radius: 3px !important;
+}
+
+/* we will explain what these classes do next! */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+
+.hidden {
+  display: none
+}
+
+.swal2-checkbox {
+  display: none !important;
+}
